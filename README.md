@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # kritinai-base-rfq
 
 RFQ and proposal response decks for **KritinAI Technologies Pvt. Ltd.**, built as static HTML on one shared style (the KritinAI Company Profile palette, DM Sans / DM Mono type and components).
@@ -28,3 +29,6 @@ Each slide is a `<section class="slide">`. Variants: `sand` (alternate backgroun
 Settings → Pages → Build and deployment → *Deploy from a branch* → `main` / root. `.nojekyll` is included so the files are served as-is.
 
 > **Confidentiality.** Proposals contain client-confidential pricing. Pages on a public repository are visible to anyone with the URL. Keep this repository private, and publish Pages only where access can be restricted (GitHub Enterprise Cloud private Pages), or share the deck as a PDF / file instead. Pages include `noindex` meta tags, but that is not access control.
+=======
+# kritinai-base-rfq
+>>>>>>> bf962e34a45709e3453fe867970d276d59a0397c
