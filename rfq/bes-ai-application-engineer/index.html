@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>KritinAI Proposal — BASE AI Application Engineer, Phase I (RFQ BES/AI/2026/001)</title>
+<link rel="icon" type="image/png" href="../../assets/img/kritinai-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/kritinai-deck.css">
+</head>
+<body>
+
+<a class="brand-logo" href="../../index.html" title="KritinAI RFQ responses"><img src="../../assets/img/kritinai-logo.png" alt="KritinAI Technologies logo"></a>
+<div class="conf-badge">CONFIDENTIAL</div>
+<div class="brand-badge">KRITINAI</div>
+<div class="progress" id="progress"></div>
+<div class="deck">
+
+  <!-- ══ 01 COVER ══════════════════════════════════════════════════════════ -->
+  <section class="slide hero">
+    <div style="margin:auto 0; position:relative; z-index:1;">
+      <div class="cover-head">
+        <div class="logo-tile"><img src="../../assets/img/kritinai-logo.png" alt="KritinAI Technologies Pvt Ltd"></div>
+        <div class="cover-meta">
+          <b>Proposal</b> KAI/BES/2026/001 · Rev 00<br/>
+          <b>In response to</b> RFQ BES/AI/2026/001 dated 24 Nov 2026<br/>
+          <b>Submitted to</b> Mr. B. Anandhan, Director – Technical, BASE Electronics &amp; Systems<br/>
+          <b>Valid for</b> 45 days from submission
+        </div>
+      </div>
+      <div class="eyebrow">Technical &amp; Commercial Proposal · Phase I</div>
+      <h1>BASE AI Application Engineer<br/><span style="color:var(--warn);">engineer-in-the-loop, evidence-first.</span></h1>
+      <p class="tag">An AI assistant that analyses customer enquiries, finds missing information, cites approved BES documents, builds compliance matrices and drafts responses — with BES engineers approving every output.</p>
+      <div class="badge-row">
+        <span class="pill">₹9,45,000 fixed + GST</span>
+        <span class="pill">15 working days to full demo · 20 to acceptance</span>
+        <span class="pill">AWS Mumbai · India-only AI processing</span>
+        <span class="pill good">ISO 27001 &amp; ISO 9001 Certified</span>
+      </div>
+    </div>
+    <div class="footnote">
+      <span>KritinAI Technologies Pvt. Ltd. · CIN: U62020PN2025PTC245276 · Pune, India</span>
+      <span>Confidential — prepared solely for BES vendor evaluation</span>
+    </div>
+  </section>
+
+  <!-- ══ 02 CONTENTS ═══════════════════════════════════════════════════════ -->
+  <section class="slide sand">
+    <div class="eyebrow">Contents · follows RFQ §24 submission list</div>
+    <h2>What this proposal covers.</h2>
+    <div class="toc">
+      <a href="#3" data-goto="3"><span class="n">01</span>Executive summary</a>
+      <a href="#4" data-goto="4"><span class="n">02</span>About KritinAI</a>
+      <a href="#5" data-goto="5"><span class="n">03</span>Understanding of BES requirements</a>
+      <a href="#8" data-goto="8"><span class="n">04</span>Solution architecture</a>
+      <a href="#12" data-goto="12"><span class="n">05</span>Scope compliance statement</a>
+      <a href="#14" data-goto="14"><span class="n">06</span>Deviations, clarifications &amp; exclusions</a>
+      <a href="#16" data-goto="16"><span class="n">07</span>Execution methodology</a>
+      <a href="#18" data-goto="18"><span class="n">08</span>Milestone schedule</a>
+      <a href="#20" data-goto="20"><span class="n">09</span>Team, governance &amp; qualification</a>
+      <a href="#22" data-goto="22"><span class="n">10</span>Fixed-price commercial offer</a>
+      <a href="#23" data-goto="23"><span class="n">11</span>Recurring costs, AI cost &amp; TCO</a>
+      <a href="#25" data-goto="25"><span class="n">12</span>Payment terms</a>
+      <a href="#26" data-goto="26"><span class="n">13</span>Warranty, support &amp; AMC</a>
+      <a href="#27" data-goto="27"><span class="n">14</span>Data security &amp; ownership</a>
+      <a href="#29" data-goto="29"><span class="n">15</span>Future integration strategy</a>
+      <a href="#30" data-goto="30"><span class="n">16</span>Clarifications &amp; acceptance</a>
+    </div>
+    <div class="footnote">
+      <span>KritinAI Technologies Pvt. Ltd. · Proposal KAI/BES/2026/001</span>
+      <span>Use ← → keys or swipe to navigate</span>
+    </div>
+  </section>
+
+  <!-- ══ 03 EXECUTIVE SUMMARY ══════════════════════════════════════════════ -->
+  <section class="slide">
+    <div class="eyebrow">01 · Executive summary</div>
+    <h2 class="sm">A secure assistant that BES engineers control — owned by BES from day one.</h2>
+    <div class="cols cols-top" style="gap:2.2rem;">
+      <div>
+        <p style="margin-bottom:.9rem; font-size:1.02rem;">Phase I covers <strong style="color:#fff;">Clamp-on Ultrasonic Flowmeters, Coriolis Mass Flowmeters and NOGS Level Measurement Systems</strong>. The assistant analyses enquiries, lists missing or contradictory parameters, drafts clarification e-mails, retrieves evidence from approved BES documents, builds a cited compliance matrix and drafts responses for engineer approval. It also runs the enquiry register, assignments, reminders and a management dashboard.</p>
+        <div class="callout" style="margin-bottom:.9rem;"><p>The AI proposes, BES engineers decide. A coded rule — not a prompt — blocks any “Complied” status without an approved source passage. Nothing is sent to a customer from the system in Phase I.</p></div>
+        <ul class="feat sm">
+          <li>One application, one PostgreSQL database, one deterministic AI workflow — no agent swarm</li>
+          <li>Runs in a BES-owned AWS account in Mumbai; Claude on Amazon Bedrock with India-only processing</li>
+          <li>Complete source code, prompts, workflows and documentation handed to BES</li>
+          <li>Director-led delivery: Awanish Kumar Prajapati is Project Manager and joins every review</li>
+        </ul>
+      </div>
+      <div class="cols-2" style="margin-top:0;">
+        <div class="stat feature sm"><div class="big">₹9.45<span class="unit">L</span></div><div class="lbl">Fixed one-time price, excl. GST (₹11,15,100 incl. 18% GST)</div></div>
+        <div class="stat sm"><div class="big">15<span class="unit">+5</span></div><div class="lbl">Working days: all modules demonstrated, then joint UAT &amp; handover</div></div>
+        <div class="stat sm"><div class="big">₹37</div><div class="lbl">Estimated AI cost per enquiry, billed by AWS to BES at actuals</div></div>
+        <div class="stat sm"><div class="big">₹0</div><div class="lbl">Platform, per-user or workflow licence fees — open-source core stack</div></div>
+      </div>
+    </div>
+    <div class="footnote">
+      <span>KritinAI Technologies Pvt. Ltd. · Proposal KAI/BES/2026/001</span>
+      <span>All prices in INR, GST extra</span>
+    </div>
+  </section>
+
+  <!-- ══ 04 ABOUT KRITINAI ═════════════════════════════════════════════════ -->
+  <section class="slide sand">
+    <div class="eyebrow">02 · About KritinAI</div>
+    <h2 class="sm">Enterprise engineering discipline, applied to BES’s first AI initiative.</h2>
+    <div class="cols cols-top" style="gap:2.2rem;">
+      <div>
+        <p style="margin-bottom:1rem; font-size:1.02rem;">KritinAI Technologies Pvt. Ltd. is a Pune-based engineering company. Our team has built and shipped systems inside Morgan Stanley, Barclays, Deutsche Bank, Citi, UBS and Fiserv, and brings the same discipline to industrial clients.</p>
+        <div class="cols-2" style="margin-top:0; gap:.9rem;">
+          <div class="stat sm feature"><div class="big">20<span class="unit">+</span></div><div class="lbl">Years of enterprise engineering in the founding team</div></div>
+          <div class="stat sm"><div class="big">14<span class="unit">+</span></div><div class="lbl">Industries served, incl. energy, manufacturing &amp; government</div></div>
+        </div>
+        <div class="badge-row" style="margin-top:1rem;">
+          <span class="tech-tag">LangGraph</span><span class="tech-tag">RAG</span><span class="tech-tag">n8n</span><span class="tech-tag">MCP</span><span class="tech-tag">Python</span><span class="tech-tag">Java / Spring Boot</span><span class="tech-tag">React</span><span class="tech-tag">AWS</span><span class="tech-tag">DevSecOps</span>
+        </div>
+      </div>
+      <div class="cols-2" style="margin-top:0; gap:1rem;">
+        <div class="card compact" style="display:flex; gap:.9rem; align-items:flex-start;">
+          <img class="cert-img" style="max-width:84px;" src="../../assets/img/iso-27001-2022.jpg" alt="ISO/IEC 27001:2022 certificate">
+          <div><h3 style="font-size:.95rem;">ISO/IEC 27001:2022</h3><p style="font-size:.78rem;">Cert. 3050260804111IS<br/>Valid to 3 Aug 2029<br/>QRO Certification LLP · IAF</p></div>
+        </div>
+        <div class="card compact" style="display:flex; gap:.9rem; align-items:flex-start;">
+          <img class="cert-img" style="max-width:84px;" src="../../assets/img/iso-9001-2015.jpg" alt="ISO 9001:2015 certificate">
+          <div><h3 style="font-size:.95rem;">ISO 9001:2015</h3><p style="font-size:.78rem;">Cert. 3050260804110Q<br/>Valid to 3 Aug 2029<br/>QRO Certification LLP · IAF</p></div>
+        </div>
+        <div class="card compact" style="grid-column:1 / -1;">
+          <h3 style="font-size:.95rem;">Company registration</h3>
+          <p style="font-size:.82rem;">CIN U62020PN2025PTC245276 · GSTIN 27AAMCK1105B1Z2 · Pune, Maharashtra<br/>connectus@kritinai.com · +91 8446878088 · kritinai.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="footnote">
+      <span>KritinAI Technologies Pvt. Ltd.</span>
+      <span>Certificates verifiable at qrocert.org</span>
+    </div>
+  </section>
+
+  <!-- ══ 05 UNDERSTANDING ══════════════════════════════════════════════════ -->
+  <section class="slide">
+    <div class="eyebrow">03 · Understanding of BES requirements</div>
+    <h2 class="sm">Cut repetitive enquiry work — without unsupported commitments.</h2>
+    <p class="lead sm">BES has about 27 years of experience in flow, level and density measurement. Today senior engineers hold most selection knowledge; Phase I captures it in approved documents and repeatable checklists, and lays the base for the BASE Digital Technical Department.</p>
+    <div class="cols-3">
+      <div class="card compact"><div class="ico">🎯</div><h3>Objectives</h3><p>Less repetitive work and fewer routine escalations; faster, standardised responses; stronger new engineers; preserved knowledge; structured registration and tracking.</p></div>
+      <div class="card compact"><div class="ico">📦</div><h3>Phase I boundary</h3><p>Three product categories · internal users only (5+ named users, 5 roles) · 10–20 approved documents · no pricing, quotations or autonomous customer communication.</p></div>
+      <div class="card compact"><div class="ico">🛡</div><h3>Non-negotiables</h3><p>All ten §9 safety requirements are treated as acceptance gates, not features — each is enforced in code (see the safety-controls slide).</p></div>
+    </div>
+    <div class="badge-row">
+      <span class="pill">Clamp-on Ultrasonic Flowmeters</span>
+      <span class="pill">Coriolis Mass Flowmeters</span>
+      <span class="pill">NOGS Level Measurement Systems</span>
+      <span class="pill warn">Website, CRM, WhatsApp, ERP → later phases</span>
+    </div>
+    <div class="footnote">
+      <span>KritinAI Technologies Pvt. Ltd. · Proposal KAI/BES/2026/001</span>
+      <span>RFQ §1–§3</span>
+    </div>
+  </section>
+
+  <!-- ══ 06 FUNCTIONAL REQUIREMENTS ════════════════════════════════════════ -->
+  <section class="slide sand top">
+    <div class="eyebrow">03 · Understanding — functions (RFQ §4)</div>
+    <h2 class="sm">Ten functions, each with a clear test of success.</h2>
+    <div class="tbl-wrap">
+      <table class="tbl sm">
+        <tr><th>Clause</th><th>Requirement in brief</th><th>What success looks like</th></tr>
+        <tr><td><strong>4.1</strong> Knowledge base</td><td>Approved PDF, Word, Excel; BES-administered upload, replace, remove; revision control</td><td>Every BES-specific answer cites document, revision and page</td></tr>
+        <tr><td><strong>4.2</strong> Enquiry analysis</td><td>Text, pasted e-mail/WhatsApp or file; 15 parameter groups extracted</td><td>Each value tagged Supplied, Inferred, Missing or Awaiting confirmation</td></tr>
+        <tr><td><strong>4.3</strong> Clarification</td><td>Missing or contradictory parameters; technology-specific questions; draft e-mail</td><td>Draft only — nothing sent without engineer authorisation</td></tr>
+        <tr><td><strong>4.4</strong> Product selection</td><td>Candidate technologies and BES models from approved documents</td><td>No invented models, specifications or certificates; engineer decides</td></tr>
+        <tr><td><strong>4.5</strong> Compliance matrix</td><td>Parameter · requirement · BES spec · status · source; six statuses</td><td>No evidence means no “Complied”; Excel export</td></tr>
+        <tr><td><strong>4.6</strong> Response drafts</td><td>Six response types</td><td>Human approval before any external use</td></tr>
+        <tr><td><strong>4.7</strong> Enquiry register</td><td>14 fields, status updates, history, duplicate flagging</td><td>Single source of truth for every enquiry</td></tr>
+        <tr><td><strong>4.8</strong> Assignment &amp; follow-up</td><td>Configurable assignment, due dates, reminders, overdue, escalation</td><td>Rule-based and auditable</td></tr>
+        <tr><td><strong>4.9</strong> Dashboard</td><td>Eight management measures</td><td>Figures computed from records, never estimated by AI</td></tr>
+        <tr><td><strong>4.10</strong> Training assistant</td><td>Q&amp;A for engineers</td><td>General knowledge labelled apart from verified BES specifications</td></tr>
+      </table>
+    </div>
+    <div class="footnote">
+      <span>KritinAI Technologies Pvt. Ltd. · Proposal KAI/BES/2026/001</span>
+      <span>RFQ §4.1–§4.10</span>
+    </div>
+  </section>
+
+  <!-- ══ 07 SAMPLE CASES ═══════════════════════════════════════════════════ -->
+  <section class="slide">
+    <div class="eyebrow">03 · Understanding — sample cases (RFQ §5)</div>
+    <h2 class="sm">The three cases test three different behaviours.</h2>
+    <div class="cols-3">
+      <div class="card compact" style="border-top:4px solid var(--terra);">
+        <div style="font-size:.7rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--terra); margin-bottom:.4rem;">Case 1 · Extraction &amp; completeness</div>
+        <h3>Clamp-on ultrasonic</h3>
+        <p style="margin-bottom:.6rem;">8″ carbon steel, water at 80 °C, 50–250 m³/h, 4–20 mA + RS-485 Modbus.</p>
+        <p><strong style="color:#fff;">Correct behaviour:</strong> extract stated values; ask for pipe schedule/wall thickness, lining, straight runs, pressure, accuracy, power, hazardous area, sensor temperature rating and quantity; partial matrix; clarification e-mail; register and assign.</p>
+      </div>
+      <div class="card compact" style="border-top:4px solid var(--warn);">
+        <div style="font-size:.7rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--warn); margin-bottom:.4rem;">Case 2 · Refusing to over-claim</div>
+        <h3>Coriolis density accuracy</h3>
+        <p style="margin-bottom:.6rem;">Density accuracy of 0.0001 g/cm³ required.</p>
+        <p><strong style="color:#fff;">Correct behaviour:</strong> flag as critical; compare with the approved datasheet value and its conditions; mark Deviated, or Not verified where evidence is missing; route to senior approval.</p>
+      </div>
+      <div class="card compact" style="border-top:4px solid var(--good);">
+        <div style="font-size:.7rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--good); margin-bottom:.4rem;">Case 3 · Judgement with gaps</div>
+        <h3>NOGS on an ESP ash hopper</h3>
+        <p style="margin-bottom:.6rem;">Non-contact level detection in a thermal power station.</p>
+        <p><strong style="color:#fff;">Correct behaviour:</strong> identify the application; retrieve NOGS notes; request hopper geometry, wall construction and thickness, material temperature, mounting access; preliminary assessment with a site-evaluation flag.</p>
+      </div>
+    </div>
+    <div class="callout" style="margin-top:1.1rem;"><p>All three cases enter the automated test suite on day 1 and run against every code change.</p></div>
+    <div class="footnote">
+      <span>KritinAI Technologies Pvt. Ltd. · Proposal KAI/BES/2026/001</span>
+      <span>RFQ §5</span>
+    </div>
+  </section>
+
+  <!-- ══ 08 ARCHITECTURE ═══════════════════════════════════════════════════ -->
+  <section class="slide sand top">
+    <div class="eyebrow">04 · Proposed solution architecture</div>
+    <h2 class="sm">One deterministic AI workflow inside the BES AWS account.</h2>
+    <svg class="arch" viewBox="0 0 980 520" role="img" aria-label="Solution architecture: users, web app, API, AI workflow, validator, n8n, Bedrock, PostgreSQL, S3 inside the BES AWS account">
+      <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="head" d="M0 0L10 5L0 10z"/></marker></defs>
+      <g class="wires">
+        <path class="wire" d="M490 62V112" marker-end="url(#ah)"/>
+        <path class="wire" d="M490 166V196" marker-end="url(#ah)"/>
+        <path class="wire" d="M250 250V292" marker-end="url(#ah)"/>
+        <path class="wire" d="M730 250V292" marker-end="url(#ah)"/>
+        <path class="wire" d="M330 340H366" marker-end="url(#ah)"/>
+        <path class="wire" d="M180 388V420" marker-end="url(#ah)"/>
+        <path class="wire" d="M490 388V420" marker-end="url(#ah)"/>
+        <path class="wire" d="M770 224H950V452H932" marker-end="url(#ah)"/>
+      </g>
+      <rect class="box" x="340" y="8" width="300" height="54" rx="10"/>
+      <text class="ttl" x="490" y="31" text-anchor="middle">BES users in a web browser</text>
+      <text class="sub" x="490" y="50" text-anchor="middle">Five roles · no software to install</text>
+
+      <rect class="zone" x="20" y="80" width="942" height="430" rx="14"/>
+      <text class="zttl" x="40" y="104">BES-owned AWS account · Asia Pacific (Mumbai)</text>
+
+      <rect class="box" x="210" y="112" width="560" height="54" rx="10"/>
+      <text class="ttl" x="490" y="135" text-anchor="middle">Web application (React)</text>
+      <text class="sub" x="490" y="154" text-anchor="middle">Enquiries · compliance matrix · drafts · register · dashboard · admin</text>
+
+      <rect class="box" x="210" y="196" width="560" height="54" rx="10"/>
+      <text class="ttl" x="490" y="219" text-anchor="middle">Application API (Python FastAPI)</text>
+      <text class="sub" x="490" y="238" text-anchor="middle">Sign-in &amp; roles · register · documents · exports · audit log</text>
+
+      <rect class="box" x="40" y="292" width="290" height="96" rx="10"/>
+      <text class="ttl" x="56" y="318">AI workflow (LangGraph)</text>
+      <text class="sub" x="56" y="340">Extract, find gaps, retrieve, compare</text>
+      <text class="sub" x="56" y="358">and draft — then wait for</text>
+      <text class="sub" x="56" y="376">engineer approval</text>
+
+      <rect class="box key" x="366" y="292" width="248" height="96" rx="10"/>
+      <text class="ttl" x="382" y="318">Compliance validator</text>
+      <text class="sub" x="382" y="340" style="fill:#fff">A coded rule, not a prompt:</text>
+      <text class="sub" x="382" y="358" style="fill:#fff">no citation → no “Complied”</text>
+      <text class="sub" x="382" y="376" style="fill:#fff">Checks models &amp; certificates</text>
+
+      <rect class="box" x="650" y="292" width="282" height="96" rx="10"/>
+      <text class="ttl" x="666" y="318">Rule automation (n8n)</text>
+      <text class="sub" x="666" y="340">Assignment, reminders,</text>
+      <text class="sub" x="666" y="358">overdue and escalation</text>
+      <text class="sub" x="666" y="376">Internal e-mail via Amazon SES</text>
+
+      <rect class="box" x="40" y="420" width="290" height="70" rx="10"/>
+      <text class="ttl" x="56" y="446">Amazon Bedrock · India</text>
+      <text class="sub" x="56" y="468">Claude Sonnet 5, Haiku 4.5, Titan</text>
+      <text class="sub" x="56" y="484">India-only routing · inputs not stored</text>
+
+      <rect class="box" x="366" y="420" width="248" height="70" rx="10"/>
+      <text class="ttl" x="382" y="446">PostgreSQL + pgvector</text>
+      <text class="sub" x="382" y="468">Records, passages, vectors,</text>
+      <text class="sub" x="382" y="484">audit log, workflow state</text>
+
+      <rect class="box" x="650" y="420" width="282" height="70" rx="10"/>
+      <text class="ttl" x="666" y="446">S3 document store</text>
+      <text class="sub" x="666" y="468">Approved files and revisions,</text>
+      <text class="sub" x="666" y="484">versioned backups</text>
+    </svg>
+    <p style="font-size:.92rem; color:var(--muted); max-width:none; margin-top:.6rem;">The API is the single entry point: it serves the web app, starts the AI workflow, and reads and writes PostgreSQL and S3. The validator sits between the AI and the user, so an unsupported “Complied” never reaches an engineer’s screen.</p>
+    <div class="footnote">
+      <span>KritinAI Technologies Pvt. Ltd. · Proposal KAI/BES/2026/001</span>
+      <span>RFQ §6</span>
+    </div>
+  </section>
+
+  <!-- ══ 09 AI WORKFLOW ════════════════════════════════════════════════════ -->
+  <section class="slide">
+    <div class="eyebrow">04 · Architecture — the AI enquiry workflow</div>
+    <h2 class="sm">Nine fixed steps, not a team of autonomous agents.</h2>
+    <div class="cols cols-top" style="gap:2.5rem;">
+      <div class="steps compact">
+        <div class="step"><div class="num">1</div><div><h3>Classify</h3><p>Product category, enquiry type, out-of-scope detection (light model).</p></div></div>
+        <div class="step"><div class="num">2</div><div><h3>Extract</h3><p>Typed parameter schema; every value tagged Supplied, Inferred, Missing or Awaiting confirmation, with quoted source text.</p></div></div>
+        <div class="step"><div class="num">3</div><div><h3>Check gaps &amp; contradictions</h3><p>Category checklist in code, then technology-specific questions from the model.</p></div></div>
+        <div class="step"><div class="num">4</div><div><h3>Retrieve evidence</h3><p>Hybrid keyword + vector search over approved, current, role-permitted documents — access filter runs in the database first.</p></div></div>
+        <div class="step"><div class="num">5</div><div><h3>Assess compliance</h3><p>Model proposes a status per parameter and must cite passage IDs.</p></div></div>
+      </div>
+      <div class="steps compact">
+        <div class="step"><div class="num" style="background:rgba(245,158,11,.14); border-color:rgba(245,158,11,.45); color:var(--warn);">6</div><div><h3>Validate (code)</h3><p>Citations must exist and support the value; model numbers, figures and certificates checked; unsupported → “Not verified”; conflicts flagged.</p></div></div>
+        <div class="step"><div class="num">7</div><div><h3>Draft</h3><p>Clarification e-mail or response from BES-approved templates.</p></div></div>
+        <div class="step"><div class="num">8</div><div><h3>Engineer review</h3><p>Workflow pauses until an authorised engineer edits and approves; critical deviations (Case 2) route to a senior approver.</p></div></div>
+        <div class="step"><div class="num">9</div><div><h3>Record</h3><p>Every step, version and approval saved to the register and audit log.</p></div></div>
+        <div class="callout" style="margin-top:.4rem;"><p>State is saved after each step — a restart or an AI service error resumes the enquiry instead of losing it (§9.8).</p></div>
+      </div>
+    </div>
+    <div class="footnote">
+      <span>KritinAI Technologies Pvt. Ltd. · Proposal KAI/BES/2026/001</span>
+      <span>RFQ §4, §6, §9</span>
+    </div>
+  </section>
+
+  <!-- ══ 10 TECHNOLOGY CHOICES ═════════════════════════════════════════════ -->
+  <section class="slide sand top">
+    <div class="eyebrow">04 · Architecture — technology choices</div>
+    <h2 class="sm">Each choice justified on reliability, security and total cost.</h2>
+    <div class="tbl-wrap">
+      <table class="tbl sm">
+        <tr><th>Layer</th><th>Choice</th><th>Why</th><th>Set aside</th></tr>
+        <tr><td><strong>User interface</strong></td><td>React + TypeScript, responsive</td><td>Browser-based, no install; components embeddable in the BES website later</td><td>Low-code portals</td></tr>
+        <tr><td><strong>Application API</strong></td><td>Python FastAPI</td><td>Same language as the AI stack; typed; OpenAPI docs for integrations</td><td>Second backend language</td></tr>
+        <tr><td><strong>AI orchestration</strong></td><td>LangGraph (MIT), single graph</td><td>Explicit, testable steps; durable state; built-in human-approval pause</td><td>Multi-agent frameworks (§6)</td></tr>
+        <tr><td><strong>Rule automation</strong></td><td>n8n Community Edition, self-hosted</td><td>Readable flows; ready connectors for Zoho, e-mail, WhatsApp; no licence fee</td><td>Cron-only jobs</td></tr>
+        <tr><td><strong>AI models</strong></td><td>Claude Sonnet 5 &amp; Haiku 4.5 on Bedrock (India)</td><td>India-only processing; inputs not stored; billed to BES; strong at extraction and citing</td><td>OpenAI / Gemini — switchable</td></tr>
+        <tr><td><strong>Embeddings</strong></td><td>Amazon Titan Text Embeddings V2</td><td>Runs in Mumbai; very low cost</td><td>External embedding APIs</td></tr>
+        <tr><td><strong>Database</strong></td><td>PostgreSQL 16 + pgvector on RDS</td><td>One store for records, vectors, audit and workflow state; managed backups</td><td>Separate vector DB vendor</td></tr>
+        <tr><td><strong>Documents</strong></td><td>pdfplumber, pypdf, python-docx, openpyxl; Textract</td><td>Permissive licences; tables preserved; OCR for scans</td><td>AGPL PDF libraries</td></tr>
+        <tr><td><strong>Hosting</strong></td><td>EC2 + Docker Compose + Caddy HTTPS</td><td>Simple and low cost at pilot scale; portable; clear path to ECS</td><td>Kubernetes (overkill)</td></tr>
+        <tr><td><strong>Auth &amp; monitoring</strong></td><td>Built-in RBAC + TOTP; CloudWatch + in-app AI run log</td><td>No per-user fees; cost per enquiry measured for §13</td><td>External AI tracing services</td></tr>
+      </table>
+    </div>
+    <p style="font-size:.86rem; color:var(--muted); max-width:none; margin-top:.6rem;">Performance targets, measured in UAT: typical enquiry analysed in under 90 seconds; document search answers in under 5 seconds. Backups: RDS point-in-time recovery (7 days), weekly snapshots, S3 versioning, tested restore runbook.</p>
+    <div class="footnote">
+      <span>KritinAI Technologies Pvt. Ltd. · Proposal KAI/BES/2026/001</span>
+      <span>RFQ §6</span>
+    </div>
+  </section>
+
+  <!-- ══ 11 SAFETY CONTROLS ════════════════════════════════════════════════ -->
+  <section class="slide top">
+    <div class="eyebrow">04 · Architecture — mandatory safety requirements (RFQ §9)</div>
+    <h2 class="sm">Every §9 requirement is enforced by a named control.</h2>
+    <div class="tbl-wrap">
+      <table class="tbl sm">
+        <tr><th>§9</th><th>Requirement</th><th>Enforced by</th></tr>
+        <tr><td>1</td><td>BES claims traceable to approved sources</td><td>Retrieval limited to approved, current revisions; citation required on every BES-specific claim</td></tr>
+        <tr><td>2</td><td>Missing information identified</td><td>Category checklist in code plus provenance tags on every parameter</td></tr>
+        <tr><td>3</td><td>No unsupported specifications</td><td>Validator checks values, model numbers and certificates against cited passages</td></tr>
+        <tr><td>4</td><td>Conflicting documents flagged</td><td>Validator compares values across cited passages and raises a conflict flag</td></tr>
+        <tr><td>5</td><td>AI never approves suitability</td><td>No approval action exists for the AI; only users with the right role can approve</td></tr>
+        <tr><td>6</td><td>Human approval before external communication</td><td>Workflow pause; drafts marked “Draft — not approved” until signed off</td></tr>
+        <tr><td>7</td><td>No quotations or commitments</td><td>Commercial terms blocked in prompts and templates; no pricing data in the knowledge base</td></tr>
+        <tr><td>8</td><td>Errors recorded and communicated</td><td>Error log, user message and admin alert for every failed step</td></tr>
+        <tr><td>9</td><td>Uploads treated as data</td><td>Uploaded text wrapped and labelled as data; the AI has no tools that send, delete or change records; outputs schema-checked</td></tr>
+        <tr><td>10</td><td>No unauthorised retrieval</td><td>Role and document-access filter in the database query, plus permission tests in the test suite</td></tr>
+      </table>
+    </div>
+    <div class="footnote">
+      <span>KritinAI Technologies Pvt. Ltd. · Proposal KAI/BES/2026/001</span>
+      <span>RFQ §9</span>
+    </div>
+  </section>
+
+  <!-- ══ 12 COMPLIANCE (FUNCTIONAL) ════════════════════════════════════════ -->
+  <section class="slide sand top">
+    <div class="eyebrow">05 · Scope compliance statement — functional (1 of 2)</div>
+    <h2 class="sm">Full compliance with every functional clause.</h2>
+    <div class="tbl-wrap">
+      <table class="tbl sm">
+        <tr><th>Clause</th><th>Requirement</th><th>Status</th><th>How KritinAI meets it</th></tr>
+        <tr><td>§3</td><td>Three categories; add more without redevelopment</td><td><span class="tag-c">C</span></td><td>Each category is a configuration pack (checklist, rules, documents) — no code change to add one</td></tr>
+        <tr><td>4.1</td><td>Knowledge base, document types, BES administration, revisions</td><td><span class="tag-c">C</span></td><td>Admin console; replacing a document creates a new revision and retires the old one from retrieval</td></tr>
+        <tr><td>4.1</td><td>Searchable PDF, Word, Excel</td><td><span class="tag-cc">CC</span></td><td>Text PDF, DOCX, tabular XLSX fully; scanned PDFs by OCR within an agreed page limit (C2)</td></tr>
+        <tr><td>4.2</td><td>Three input channels; 15 parameter groups; supplied vs inferred vs missing</td><td><span class="tag-c">C</span></td><td>Text, paste, file upload (PDF, DOCX, XLSX, TXT, EML); typed schema; provenance tag + quoted text per field</td></tr>
+        <tr><td>4.3</td><td>Clarifications, draft e-mail, no automatic transmission</td><td><span class="tag-c">C</span></td><td>Checklist + AI reasoning; no customer-facing send function in Phase I</td></tr>
+        <tr><td>4.4</td><td>Product selection from approved documents only; no invention</td><td><span class="tag-c">C</span></td><td>Post-generation validator checks every model number, value and certificate against cited passages</td></tr>
+        <tr><td>4.5</td><td>Matrix format, six statuses, no evidence → no “Complied”, Excel</td><td><span class="tag-c">C</span></td><td>Enforced in code; unsupported statuses downgraded to “Not verified”; formatted .xlsx export</td></tr>
+        <tr><td>4.6</td><td>Six draft types; human approval; no pricing</td><td><span class="tag-c">C</span></td><td>Templates per type; approval recorded; commercial terms blocked</td></tr>
+        <tr><td>4.7</td><td>14-field register, history, duplicates</td><td><span class="tag-cc">CC</span></td><td>All fields and version history; duplicates flagged for user decision (C4)</td></tr>
+        <tr><td>4.8</td><td>Assignment, reminders, overdue, escalation</td><td><span class="tag-cc">CC</span></td><td>Rule-based; reminders on dashboard and by internal e-mail (C5)</td></tr>
+        <tr><td>4.9 / 4.10</td><td>Dashboard from records; training assistant</td><td><span class="tag-c">C</span></td><td>SQL aggregates only; answers split into “Verified from BES documents” and “General engineering guidance”</td></tr>
+      </table>
+    </div>
+    <div class="footnote">
+      <span><span class="tag-c">C</span> Complied · <span class="tag-cc">CC</span> Complied with clarification · <span class="tag-d">D</span> Deviation</span>
+      <span>RFQ §3–§4</span>
+    </div>
+  </section>
+
+  <!-- ══ 13 COMPLIANCE (CONTRACTUAL) ═══════════════════════════════════════ -->
+  <section class="slide top">
+    <div class="eyebrow">05 · Scope compliance statement — architecture &amp; contract (2 of 2)</div>
+    <h2 class="sm">One deviation: the acceptance window.</h2>
+    <div class="tbl-wrap">
+      <table class="tbl sm">
+        <tr><th>Clause</th><th>Requirement</th><th>Status</th><th>KritinAI response</th></tr>
+        <tr><td>§5–§9</td><td>Sample cases, architecture, integrations foundation, five roles &amp; RBAC, ten safety rules</td><td><span class="tag-c">C</span></td><td>Built into the test suite; architecture slides; API-first; access filter in database queries</td></tr>
+        <tr><td>§10</td><td>15 working days</td><td><span class="tag-d">D</span></td><td>15 working days to a fully demonstrated, tested system; +5 for UAT, fixes, training and handover (D1)</td></tr>
+        <tr><td>§11</td><td>20 mandatory deliverables</td><td><span class="tag-c">C</span></td><td>All 20 delivered — mapping on the methodology slide</td></tr>
+        <tr><td>§12</td><td>UAT, scorecard, minimum criteria</td><td><span class="tag-cc">CC</span></td><td>Accepted; test-case and scoring conventions agreed at M1 (C6, C7)</td></tr>
+        <tr><td>§13</td><td>Productivity measures</td><td><span class="tag-cc">CC</span></td><td>All seven measured; 40% target pursued, not guaranteed — as the RFQ states (C8)</td></tr>
+        <tr><td>§14–§15</td><td>NDA, data protection, disclosures, IP, BES-owned accounts</td><td><span class="tag-c">C</span></td><td>Data security and ownership slides</td></tr>
+        <tr><td>§16</td><td>Vendor qualification</td><td><span class="tag-c">C</span></td><td>Team &amp; qualification slides</td></tr>
+        <tr><td>§17–§18</td><td>Itemised fixed price; recurring cost; TCO; 20/40/40 payments</td><td><span class="tag-c">C</span></td><td>Commercial slides; payment terms accepted</td></tr>
+        <tr><td>§19</td><td>90-day warranty, targets, AMC</td><td><span class="tag-cc">CC</span></td><td>Accepted; third-party outages excluded from targets (C9)</td></tr>
+        <tr><td>§20–§22</td><td>Governance, change management, exclusions</td><td><span class="tag-c">C</span></td><td>Accepted as written</td></tr>
+        <tr><td>§24</td><td>Validity ≥ 30 days</td><td><span class="tag-c">C</span></td><td>45 days</td></tr>
+      </table>
+    </div>
+    <div class="footnote">
+      <span>KritinAI Technologies Pvt. Ltd. · Proposal KAI/BES/2026/001</span>
+      <span>RFQ §5–§24</span>
+    </div>
+  </section>
+
+  <!-- ══ 14 DEVIATION & CLARIFICATIONS ═════════════════════════════════════ -->
+  <section class="slide sand top">
+    <div class="eyebrow">06 · Deviation and clarifications</div>
+    <h2 class="sm">Fixing what the RFQ leaves open, so both sides test the same scope.</h2>
+    <div class="callout warn" style="margin-bottom:.9rem;"><p>D1 · Schedule (§10): Days 1–15 build, demonstrate and test all modules (RFQ M1–M4 + internal acceptance). Days 16–20 joint UAT with held-back cases, corrections, retest, restore demo, training and handover. If all inputs arrive on Day 0 and UAT cases by Day 10, we will aim to finish within 15 days and report daily.</p></div>
+    <div class="tbl-wrap">
+      <table class="tbl sm">
+        <tr><th>No.</th><th>Topic</th><th>Clarification</th></tr>
+        <tr><td>C1</td><td>Pilot capacity</td><td>Up to 15 named users, 10 concurrent, 1,000 enquiries/month, 30 documents or 2,000 pages</td></tr>
+        <tr><td>C2</td><td>Document processing</td><td>Text PDF, DOCX, tabular XLSX fully; OCR up to 300 scanned pages; drawings, P&amp;IDs, images stored and cited but not interpreted</td></tr>
+        <tr><td>C3</td><td>Language</td><td>English; partly Tamil/Hindi enquiries best-effort and flagged for review</td></tr>
+        <tr><td>C4</td><td>Duplicates</td><td>Flagged for user decision, not blocked automatically</td></tr>
+        <tr><td>C5</td><td>Notifications</td><td>Dashboard and internal e-mail; WhatsApp/SMS alerts a later option</td></tr>
+        <tr><td>C6</td><td>UAT test cases</td><td>Within the three categories and supported formats; “out of scope”, “Information required” or “Not verified” can be correct answers; outcomes written before testing</td></tr>
+        <tr><td>C7</td><td>Extraction accuracy</td><td>Mandatory parameters and scoring rules agreed at M1; 90% applies to clearly stated values</td></tr>
+        <tr><td>C8</td><td>Productivity</td><td>Timed manual baseline vs AI-assisted run on the same enquiries; reported as measured</td></tr>
+        <tr><td>C9</td><td>Support</td><td>Targets exclude AWS / Bedrock / third-party outages — we diagnose, inform and restore when service returns</td></tr>
+      </table>
+    </div>
+    <div class="footnote">
+      <span>KritinAI Technologies Pvt. Ltd. · Proposal KAI/BES/2026/001</span>
+      <span>RFQ §10, §12, §13, §19, §22</span>
+    </div>
+  </section>
+
+  <!-- ══ 15 ASSUMPTIONS & EXCLUSIONS ═══════════════════════════════════════ -->
+  <section class="slide">
+    <div class="eyebrow">06 · Assumptions and exclusions</div>
+    <h2 class="sm">What the fixed price assumes — and leaves out.</h2>
+    <div class="cols-2" style="gap:1.4rem;">
+      <div class="card">
+        <h3>Assumptions</h3>
+        <ul class="feat sm">
+          <li>Mutual NDA signed; BES AWS account and GitHub organisation ready before Day 1 (we can set these up with BES on a call)</li>
+          <li>Approved documents on Day 0; coordinator replies within 1 working day</li>
+          <li>Product facts and selection rules confirmed by Day 3</li>
+          <li>Pilot uses non-confidential documents and anonymised enquiries (§14)</li>
+          <li>AWS and AI usage billed by AWS directly to BES; estimates at today’s list prices</li>
+          <li>Delays in BES inputs extend the schedule day for day, at no cost to either side</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Exclusions</h3>
+        <ul class="feat sm x">
+          <li>Everything listed in RFQ §22</li>
+          <li>Sending e-mail, WhatsApp or other messages to customers from the system</li>
+          <li>Cleaning, rewriting or digitising documents beyond the C2 limits</li>
+          <li>Interpreting engineering drawings, P&amp;IDs or images</li>
+          <li>Single sign-on with Microsoft 365 / Google Workspace (option)</li>
+          <li>External load or penetration testing (KritinAI runs its own security tests)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footnote">
+      <span>KritinAI Technologies Pvt. Ltd. · Proposal KAI/BES/2026/001</span>
+      <span>RFQ §22</span>
+    </div>
+  </section>
+
+  <!-- ══ 16 METHODOLOGY ════════════════════════════════════════════════════ -->
+  <section class="slide sand top">
+    <div class="eyebrow">07 · Project execution methodology</div>
+    <h2 class="sm">Measured against BES’s own cases from day one.</h2>
+    <div class="cols-3" style="gap:1rem;">
+      <div class="card compact"><div class="ico">🧪</div><h3>Evaluation first</h3><p>Sample cases + 20 synthetic enquiries become an automated test set on day 1, run on every change: extraction, missing-parameter recall, citation validity, zero unsupported “Complied”.</p></div>
+      <div class="card compact"><div class="ico">🤖</div><h3>AI-assisted, human-accountable</h3><p>Claude Code and Google Antigravity generate scaffolding, screens, APIs and tests. The senior engineer reviews every pull request; the architect reviews retrieval, security and the validator. No BES data in coding tools.</p></div>
+      <div class="card compact"><div class="ico">⚙️</div><h3>Rules where rules work</h3><p>Assignment, due dates, reminders, escalation, status and dashboard figures are deterministic code. AI only where language understanding is needed.</p></div>
+      <div class="card compact"><div class="ico">🧩</div><h3>Configuration over code</h3><p>Checklists, clarification and selection rules per category live in versioned files reviewed by BES engineers.</p></div>
+      <div class="card compact"><div class="ico">🖥</div><h3>Show, don’t report</h3><p>Working software at every milestone, on BES’s own AWS account.</p></div>
+      <div class="card compact"><div class="ico">🔗</div><h3>Traceable decisions</h3><p>Prompts, configuration and code in a BES-owned Git repository, each change linked to a requirement.</p></div>
+    </div>
+    <div class="tbl-wrap" style="margin-top:1rem;">
+      <table class="tbl sm">
+        <tr><th>Test layer</th><th>Covers</th><th>Who</th></tr>
+        <tr><td>Unit, API &amp; workflow tests</td><td>Business rules, RBAC, exports, duplicates, assignment, reminders, escalation, approvals</td><td>Developers (automated)</td></tr>
+        <tr><td>AI evaluation suite</td><td>Extraction, clarification, retrieval, compliance status, refusal to over-claim</td><td>Senior AI engineer</td></tr>
+        <tr><td>Security &amp; restore</td><td>Role bypass, restricted retrieval, prompt injection in uploads, OWASP Top 10; backup restore drill</td><td>Architect &amp; senior engineer, witnessed by BES</td></tr>
+        <tr><td>Joint UAT</td><td>20+ BES enquiries incl. held-back cases, RFQ scorecard</td><td>BES acceptance team with KritinAI</td></tr>
+      </table>
+    </div>
+    <div class="footnote">
+      <span>KritinAI Technologies Pvt. Ltd. · Proposal KAI/BES/2026/001</span>
+      <span>RFQ §12, §24</span>
+    </div>
+  </section>
+
+  <!-- ══ 17 DELIVERABLES ═══════════════════════════════════════════════════ -->
+  <section class="slide">
+    <div class="eyebrow">07 · Methodology — the 20 mandatory deliverables (RFQ §11)</div>
+    <h2 class="sm">Every deliverable has a form and a milestone.</h2>
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <tr><th>RFQ §11 deliverables</th><th>Delivered as</th><th>Milestone</th></tr>
+        <tr><td><strong>1–12</strong> Application modules</td><td>Working application on BES AWS (staging and production)</td><td>M2–M4</td></tr>
+        <tr><td><strong>13</strong> Source code</td><td>Git repository in the BES GitHub organisation, full history</td><td>Continuous; final tag at handover</td></tr>
+        <tr><td><strong>14</strong> Workflows, prompts, configuration</td><td>In the repository; n8n workflows exported as JSON</td><td>Handover</td></tr>
+        <tr><td><strong>15</strong> Database structure &amp; export</td><td>Schema migrations, data dictionary, one-click CSV/SQL export</td><td>M4</td></tr>
+        <tr><td><strong>16–18</strong> Documentation</td><td>Architecture, installation &amp; deployment, user and administrator manuals</td><td>M5</td></tr>
+        <tr><td><strong>19</strong> Test report &amp; limitations</td><td>Evaluation results, UAT scorecard, known-limitations register</td><td>M5</td></tr>
+        <tr><td><strong>20</strong> Training &amp; handover</td><td>Two sessions (engineers; administrators) + recordings; technical handover to BES or nominee</td><td>M5</td></tr>
+      </table>
+    </div>
+    <div class="footnote">
+      <span>KritinAI Technologies Pvt. Ltd. · Proposal KAI/BES/2026/001</span>
+      <span>RFQ §11</span>
+    </div>
+  </section>
+
+  <!-- ══ 18 SCHEDULE ═══════════════════════════════════════════════════════ -->
+  <section class="slide sand top">
+    <div class="eyebrow">08 · Milestone schedule</div>
+    <h2 class="sm">All modules demonstrated by day 15, accepted by day 20.</h2>
+    <div class="gantt">
+      <div></div>
+      <div class="g-axis"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span></div>
+      <div class="g-label bes">◆ Inputs ready: NDA, accounts, documents</div><div class="g-track"><div class="g-dia" style="left:2.381%"></div></div>
+      <div class="g-label">M1 Requirements, architecture, first demo</div><div class="g-track"><div class="g-bar" style="left:4.762%; width:14.286%">Days 1–3 · P1 20%</div></div>
+      <div class="g-label bes">◆ BES confirms selection rules</div><div class="g-track"><div class="g-dia" style="left:16.667%"></div></div>
+      <div class="g-label">M2 Retrieval and enquiry analysis</div><div class="g-track"><div class="g-bar" style="left:19.048%; width:19.048%">Days 4–7</div></div>
+      <div class="g-label">M3 Matrix, responses, register</div><div class="g-track"><div class="g-bar" style="left:38.095%; width:14.286%">Days 8–10</div></div>
+      <div class="g-label bes">◆ BES shares UAT cases</div><div class="g-track"><div class="g-dia" style="left:50%"></div></div>
+      <div class="g-label">M4 Roles, assignment, dashboard</div><div class="g-track"><div class="g-bar" style="left:52.381%; width:9.524%">11–12 · P2 40%</div></div>
+      <div class="g-label">Internal tests, security, restore drill</div><div class="g-track"><div class="g-bar" style="left:61.905%; width:14.286%">Days 13–15</div></div>
+      <div class="g-label key">M5 Joint UAT, fixes, training, handover</div><div class="g-track"><div class="g-bar key" style="left:76.190%; width:23.810%">Days 16–20 · P3 40%</div></div>
+    </div>
+    <div class="tbl-wrap" style="margin-top:1rem;">
+      <table class="tbl sm">
+        <tr><th>Milestone</th><th>Deliverables</th><th>Demo</th></tr>
+        <tr><td><strong>M1</strong> · 1–3</td><td>Confirmed requirements and parameter lists; architecture document; AWS environment; knowledge base loaded; first demo of search and Case 1 extraction</td><td>Day 3</td></tr>
+        <tr><td><strong>M2</strong> · 4–7</td><td>Retrieval with citations; enquiry analysis for all three categories; clarification drafts; evaluation report 1</td><td>Day 7</td></tr>
+        <tr><td><strong>M3</strong> · 8–10</td><td>Compliance matrix with validator and Excel export; six draft types; register with duplicate flagging; evaluation report 2</td><td>Day 10</td></tr>
+        <tr><td><strong>M4</strong> · 11–12</td><td>Five roles and document access; assignment, reminders, escalation; dashboard; training assistant</td><td>Day 12</td></tr>
+        <tr><td><strong>M5</strong> · 13–20</td><td>Internal acceptance (13–15); joint UAT on 20+ enquiries, corrections, productivity measures, training, documentation, code and account handover (16–20)</td><td>Days 15 &amp; 20</td></tr>
+      </table>
+    </div>
+    <div class="footnote">
+      <span>Working days from work order · ◆ BES inputs due</span>
+      <span>RFQ §10</span>
+    </div>
+  </section>
+
+  <!-- ══ 19 DEPENDENCIES & RISKS ═══════════════════════════════════════════ -->
+  <section class="slide top">
+    <div class="eyebrow">08 · Schedule — dependencies and risks</div>
+    <h2 class="sm">What the schedule depends on, and how we protect it.</h2>
+    <div class="cols-2" style="gap:1.2rem; margin-top:0;">
+      <div class="tbl-wrap">
+        <table class="tbl sm">
+          <tr><th>BES input</th><th>By</th><th>If late</th></tr>
+          <tr><td>Signed NDA and work order</td><td>Day 0</td><td>Start moves</td></tr>
+          <tr><td>BES-owned AWS (Mumbai) and GitHub organisation</td><td>Day 0</td><td>We can create them with BES on a call</td></tr>
+          <tr><td>10–20 approved documents</td><td>Day 0</td><td>Day-for-day shift</td></tr>
+          <tr><td>Technical coordinator, 1-day replies</td><td>Day 1+</td><td>Day-for-day shift</td></tr>
+          <tr><td>Selection rules and approval roles</td><td>Day 3</td><td>M2 shifts</td></tr>
+          <tr><td>20+ UAT enquiries with expected outcomes</td><td>Day 10</td><td>UAT shifts</td></tr>
+          <tr><td>Acceptance team available</td><td>16–20</td><td>Acceptance shifts</td></tr>
+          <tr><td>Bedrock model access in Mumbai</td><td>Day 1</td><td>Fallback to another approved model</td></tr>
+        </table>
+      </div>
+      <div class="tbl-wrap">
+        <table class="tbl sm">
+          <tr><th>Risk</th><th>Mitigation</th></tr>
+          <tr><td>Documents late or scanned images</td><td>Day 0 checklist; OCR within C2 limits; quality check on Day 1</td></tr>
+          <tr><td>Selection rules not documented</td><td>Day 2 workshop; rules captured as configuration for BES sign-off</td></tr>
+          <tr><td>Held-back UAT cases out of scope</td><td>C6: expected outcomes written before testing</td></tr>
+          <tr><td>AI output quality varies</td><td>Evaluation suite on every change; model version pinned; validator as a hard stop</td></tr>
+          <tr><td>Compressed schedule</td><td>Testing from day 1; protected 5-day UAT window</td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="footnote">
+      <span>KritinAI Technologies Pvt. Ltd. · Proposal KAI/BES/2026/001</span>
+      <span>RFQ §10, §20</span>
+    </div>
+  </section>
+
+  <!-- ══ 20 TEAM & GOVERNANCE ══════════════════════════════════════════════ -->
+  <section class="slide sand top">
+    <div class="eyebrow">09 · Development team and governance</div>
+    <h2 class="sm">Five people, Director-led — the same people BES interviews.</h2>
+    <div class="tbl-wrap">
+      <table class="tbl sm">
+        <tr><th>Role</th><th>Name</th><th>Commitment</th><th>Responsibilities</th></tr>
+        <tr><td><strong>Project Manager &amp; Delivery Lead</strong></td><td>Awanish Kumar Prajapati, Director</td><td>~60% (12 days)</td><td>Single point of accountability; BES liaison; governance; every technical review; UAT. 18+ years in enterprise Java/Spring Boot, microservices, DevOps, Gen AI and agentic AI</td></tr>
+        <tr><td><strong>Solution Architect</strong></td><td>[Name] — contract architect engaged by KritinAI</td><td>8 days, front-loaded</td><td>Architecture, retrieval and validator design, security review, M1 sign-off, go-live review</td></tr>
+        <tr><td><strong>Senior Agentic AI Engineer</strong></td><td>[Name]</td><td>Full time, 20 days</td><td>LangGraph workflow, RAG, extraction, validator, evaluation suite, n8n</td></tr>
+        <tr><td><strong>AI / Full-stack Engineer</strong></td><td>[Name]</td><td>Full time, 20 days</td><td>React UI, register, dashboard, exports</td></tr>
+        <tr><td><strong>AI / Backend Engineer</strong></td><td>[Name]</td><td>Full time, 20 days</td><td>FastAPI, RBAC, document admin, notifications, tests, deployment</td></tr>
+      </table>
+    </div>
+    <div class="cols-2" style="margin-top:1rem; gap:1rem;">
+      <div class="callout"><p>Subcontractors: none. The Solution Architect is an individual consultant on a time-and-material contract with KritinAI, bound by the same NDA and IP terms. KritinAI remains fully responsible.</p></div>
+      <div class="card compact">
+        <h3 style="font-size:.95rem;">Governance (RFQ §20)</h3>
+        <p style="font-size:.84rem;">Kick-off &amp; schedule Day 1 · daily e-mail summary · milestone reports M1–M5 · demos on days 3, 7, 10, 12, 15, 20 · live dependency, risk &amp; issue registers · written change requests · completion report. Escalation: Senior AI Engineer → Awanish Kumar Prajapati → BES Director – Technical.</p>
+      </div>
+    </div>
+    <div class="footnote">
+      <span>KritinAI Technologies Pvt. Ltd. · Proposal KAI/BES/2026/001</span>
+      <span>RFQ §16, §20</span>
+    </div>
+  </section>
+
+  <!-- ══ 21 VENDOR QUALIFICATION ═══════════════════════════════════════════ -->
+  <section class="slide top">
+    <div class="eyebrow">09 · Vendor qualification (RFQ §16)</div>
+    <h2 class="sm">Ready for a technical interview with the named team.</h2>
+    <div class="tbl-wrap">
+      <table class="tbl sm">
+        <tr><th>No.</th><th>RFQ item</th><th>KritinAI response</th></tr>
+        <tr><td>1–2</td><td>Project manager and development team</td><td>Team slide; CVs in Annexure A</td></tr>
+        <tr><td>3, 5</td><td>Previous AI, RAG and workflow projects; KritinAI’s actual contribution</td><td>Annexure B: [project, sector, scope, KritinAI role, period, what was built and by whom]</td></tr>
+        <tr><td>4</td><td>Live demonstration</td><td>Offered on a date of BES’s choice: [application to be demonstrated]</td></tr>
+        <tr><td>6</td><td>Customer references</td><td>[Reference name, organisation and contact, where permitted]</td></tr>
+        <tr><td>7</td><td>Subcontractors</td><td>None; one individual contract architect</td></tr>
+        <tr><td>8</td><td>Proposed architecture</td><td>Architecture slides</td></tr>
+        <tr><td>9</td><td>Certifications</td><td><strong>ISO/IEC 27001:2022</strong> (3050260804111IS) and <strong>ISO 9001:2015</strong> (3050260804110Q), QRO Certification LLP, IAF-accredited, valid to 3 Aug 2029 · CIN U62020PN2025PTC245276 · GSTIN 27AAMCK1105B1Z2</td></tr>
+        <tr><td>10</td><td>Director’s involvement</td><td>Confirmed — the Director is the Project Manager, attends every milestone review and signs off each deliverable</td></tr>
+      </table>
+    </div>
+    <div class="badge-row" style="margin-top:1rem;">
+      <span class="pill pill-sm">Annexure A — Team CVs</span>
+      <span class="pill pill-sm">Annexure B — Projects &amp; contribution</span>
+      <span class="pill pill-sm">Annexure C — Registrations &amp; certificates</span>
+      <span class="pill pill-sm">Annexure D — Draft mutual NDA</span>
+    </div>
+    <div class="footnote">
+      <span>KritinAI Technologies Pvt. Ltd. · Proposal KAI/BES/2026/001</span>
+      <span>RFQ §16</span>
+    </div>
+  </section>
+
+  <!-- ══ 22 COMMERCIAL OFFER ═══════════════════════════════════════════════ -->
+  <section class="slide sand top">
+    <div class="eyebrow">10 · Fixed-price commercial offer (RFQ §17)</div>
+    <h2 class="sm">₹9,45,000 fixed — ₹11,15,100 including GST.</h2>
+    <div class="cols cols-top" style="gap:2rem;">
+      <div class="tbl-wrap">
+        <table class="tbl sm">
+          <tr><th>S. No.</th><th>Description</th><th class="num">Amount (INR)</th></tr>
+          <tr><td>1</td><td>Requirement study and system architecture</td><td class="num">85,000</td></tr>
+          <tr><td>2</td><td>AI knowledge-base development</td><td class="num">1,30,000</td></tr>
+          <tr><td>3</td><td>Technical enquiry analysis module</td><td class="num">1,40,000</td></tr>
+          <tr><td>4</td><td>Compliance matrix and response generation</td><td class="num">1,40,000</td></tr>
+          <tr><td>5</td><td>Enquiry register and workflow automation</td><td class="num">1,05,000</td></tr>
+          <tr><td>6</td><td>Management dashboard and user interface</td><td class="num">95,000</td></tr>
+          <tr><td>7</td><td>Security and user administration</td><td class="num">70,000</td></tr>
+          <tr><td>8</td><td>Testing and deployment</td><td class="num">75,000</td></tr>
+          <tr><td>9</td><td>Training, documentation and handover</td><td class="num">60,000</td></tr>
+          <tr><td>10</td><td>Warranty support (90 days)</td><td class="num">45,000</td></tr>
+          <tr class="total"><td></td><td>Total one-time development cost</td><td class="num">9,45,000</td></tr>
+          <tr><td></td><td>Applicable GST (IGST 18%)</td><td class="num">1,70,100</td></tr>
+          <tr class="grand"><td></td><td>Grand total</td><td class="num">11,15,100</td></tr>
+        </table>
+      </div>
+      <div>
+        <div class="card compact" style="margin-bottom:.9rem;">
+          <h3 style="font-size:.95rem;">Included</h3>
+          <p style="font-size:.86rem;">All 20 mandatory deliverables · BES AWS staging and production setup · automated evaluation suite · two training sessions with recordings · 90-day warranty.</p>
+        </div>
+        <div class="card compact" style="margin-bottom:.9rem;">
+          <h3 style="font-size:.95rem;">Not included</h3>
+          <p style="font-size:.86rem;">AWS hosting and AI usage (billed by AWS to BES) · section 06 exclusions · work beyond C1 pilot capacity.</p>
+        </div>
+        <div class="tbl-wrap">
+          <table class="tbl sm">
+            <tr><th>Optional, only if BES asks</th><th class="num">INR, excl. GST</th></tr>
+            <tr><td>Each additional product category</td><td class="num">75,000</td></tr>
+            <tr><td>Single sign-on (Microsoft 365 / Google)</td><td class="num">40,000</td></tr>
+            <tr><td>Knowledge base beyond C2 limits</td><td class="num">6,000 / 100 pages</td></tr>
+            <tr><td>Change requests and enhancements</td><td class="num">9,000 / person-day</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="footnote">
+      <span>KritinAI Technologies Pvt. Ltd. · Proposal KAI/BES/2026/001</span>
+      <span>RFQ §17</span>
+    </div>
+  </section>
+
+  <!-- ══ 23 RECURRING ══════════════════════════════════════════════════════ -->
+  <section class="slide top">
+    <div class="eyebrow">11 · Recurring expenditure (RFQ §17)</div>
+    <h2 class="sm">About ₹15,800 a month for cloud and AI at 100 enquiries.</h2>
+    <div class="tbl-wrap">
+      <table class="tbl sm">
+        <tr><th>Description</th><th class="num">Monthly (INR)</th><th class="num">Annual (INR)</th><th>Billed by</th></tr>
+        <tr><td>Cloud hosting — EC2 t4g.large + 50 GB, S3 with versioning, backups, CloudWatch, SES</td><td class="num">5,300</td><td class="num">63,600</td><td>AWS → BES</td></tr>
+        <tr><td>AI model / API usage — Bedrock (Claude, Titan embeddings), Textract OCR</td><td class="num">3,700</td><td class="num">44,400</td><td>AWS → BES</td></tr>
+        <tr><td>Database and storage — RDS PostgreSQL db.t4g.medium, 50 GB, 7-day PITR</td><td class="num">6,800</td><td class="num">81,600</td><td>AWS → BES</td></tr>
+        <tr><td>Workflow automation licences — n8n Community Edition, self-hosted</td><td class="num">0</td><td class="num">0</td><td>—</td></tr>
+        <tr><td>User licences</td><td class="num">0</td><td class="num">0</td><td>—</td></tr>
+        <tr><td>Maintenance &amp; technical support — AMC from month 4, optional</td><td class="num">15,000</td><td class="num">1,80,000</td><td>KritinAI</td></tr>
+        <tr><td>Other third-party — Let’s Encrypt SSL, BES sub-domain, GitHub free tier</td><td class="num">0</td><td class="num">0</td><td>—</td></tr>
+        <tr class="total"><td>Total recurring expenditure</td><td class="num">30,800</td><td class="num">3,69,600</td><td></td></tr>
+      </table>
+    </div>
+    <div class="callout" style="margin-top:1rem;"><p>Cloud and AI are billed by AWS directly to the BES account at actual usage — KritinAI adds no mark-up. AWS invoices in India carry GST. Without AMC, BES pays only the AWS lines.</p></div>
+    <div class="footnote">
+      <span>KritinAI Technologies Pvt. Ltd. · Proposal KAI/BES/2026/001</span>
+      <span>Excl. GST · estimates at current list prices</span>
+    </div>
+  </section>
+
+  <!-- ══ 24 AI COST & TCO ══════════════════════════════════════════════════ -->
+  <section class="slide sand top">
+    <div class="eyebrow">11 · AI operating cost and total cost of ownership</div>
+    <h2 class="sm">₹37 of AI per enquiry; ₹20.1 lakh over three years at pilot volume.</h2>
+    <div class="cols cols-top" style="gap:1.6rem;">
+      <div>
+        <div class="tbl-wrap" style="margin-bottom:1rem;">
+          <table class="tbl sm">
+            <tr><th class="num">Enquiries / mo</th><th class="num">AI</th><th class="num">Cloud + DB</th><th class="num">AMC</th><th class="num">Total / mo</th></tr>
+            <tr><td class="num">100</td><td class="num">3,700</td><td class="num">12,100</td><td class="num">15,000</td><td class="num"><strong>30,800</strong></td></tr>
+            <tr><td class="num">500</td><td class="num">18,500</td><td class="num">12,100</td><td class="num">15,000</td><td class="num"><strong>45,600</strong></td></tr>
+            <tr><td class="num">1,000</td><td class="num">37,000</td><td class="num">21,700</td><td class="num">15,000</td><td class="num"><strong>73,700</strong></td></tr>
+          </table>
+        </div>
+        <div class="tbl-wrap">
+          <table class="tbl sm">
+            <tr><th class="num">Enquiries / mo</th><th class="num">Year 1 TCO</th><th class="num">3-year TCO</th></tr>
+            <tr><td class="num">100</td><td class="num">12,69,600</td><td class="num">20,08,800</td></tr>
+            <tr><td class="num">500</td><td class="num">14,47,200</td><td class="num">25,41,600</td></tr>
+            <tr><td class="num">1,000</td><td class="num">17,84,400</td><td class="num">35,53,200</td></tr>
+          </table>
+        </div>
+        <p style="font-size:.8rem; color:var(--muted); max-width:none; margin-top:.6rem;">INR, excl. GST. TCO = one-time price + 12 months of cloud and AI per year + AMC (9 months in year 1, 12 thereafter). At 1,000/month we move to EC2 t4g.xlarge and RDS db.t4g.large (+≈₹9,600/month).</p>
+      </div>
+      <div class="tbl-wrap">
+        <table class="tbl sm">
+          <tr><th>Assumption</th><th>Value</th></tr>
+          <tr><td>Main model</td><td>Claude Sonnet 5, Bedrock India; US$2.75 in / 13.75 out per M tokens (incl. 10% regional premium)</td></tr>
+          <tr><td>Light model</td><td>Claude Haiku 4.5; US$1.10 in / 5.50 out per M tokens</td></tr>
+          <tr><td>AI calls per enquiry</td><td>5: extract, clarify, compliance, draft, one redraft</td></tr>
+          <tr><td>Tokens per enquiry</td><td>~51,000 input (incl. ~15,000 retrieved) and 9,500 output</td></tr>
+          <tr><td>Training assistant</td><td>3 questions per enquiry, ~8,800 tokens each</td></tr>
+          <tr><td>Embeddings + OCR</td><td>Titan V2 (US$0.02 / M tokens) + Textract; &lt; US$0.01 per enquiry</td></tr>
+          <tr><td>Safety margin · FX</td><td>20% · ₹95 per US$</td></tr>
+          <tr><td>Documents · storage</td><td>≤ 30 docs / 2,000 pages indexed once · &lt; 20 GB in year 1</td></tr>
+        </table>
+        <p style="font-size:.78rem; color:var(--muted); max-width:none; padding:.6rem .8rem;">Prompt caching should cut AI cost by a further 15–25%. Real cost per enquiry is measured in UAT and reported (§13).</p>
+      </div>
+    </div>
+    <div class="footnote">
+      <span>KritinAI Technologies Pvt. Ltd. · Proposal KAI/BES/2026/001</span>
+      <span>RFQ §17 · 100 / 500 / 1,000 enquiries per month</span>
+    </div>
+  </section>
+
+  <!-- ══ 25 PAYMENT TERMS ══════════════════════════════════════════════════ -->
+  <section class="slide">
+    <div class="eyebrow">12 · Payment terms, taxes and validity (RFQ §18)</div>
+    <h2 class="sm">BES’s 20 / 40 / 40 milestone terms, accepted.</h2>
+    <div class="cols-3">
+      <div class="stat sm"><div class="big">20<span class="unit">%</span></div><div class="lbl"><strong style="color:#fff;">P1 · ₹1,89,000</strong><br/>Architecture approved and first working demo (M1, Day 3)</div></div>
+      <div class="stat sm"><div class="big">40<span class="unit">%</span></div><div class="lbl"><strong style="color:#fff;">P2 · ₹3,78,000</strong><br/>Agreed functional modules demonstrated (M4, Day 12)</div></div>
+      <div class="stat sm feature"><div class="big">40<span class="unit">%</span></div><div class="lbl"><strong style="color:#fff;">P3 · ₹3,78,000</strong><br/>Final UAT approval, training and complete handover (Day 20)</div></div>
+    </div>
+    <ul class="feat sm" style="margin-top:1.2rem;">
+      <li>Invoices payable within 15 days of receipt</li>
+      <li>A milestone counts as accepted if BES raises no written objection within 5 working days of the demonstration; objections list specific, correctable gaps</li>
+      <li>GST extra at the rate in force on the invoice date (currently 18% IGST)</li>
+      <li>Price valid for 45 days from submission · scope changes per RFQ §21 at ₹9,000 per person-day</li>
+    </ul>
+    <div class="footnote">
+      <span>KritinAI Technologies Pvt. Ltd. · Proposal KAI/BES/2026/001</span>
+      <span>Amounts excl. GST</span>
+    </div>
+  </section>
+
+  <!-- ══ 26 WARRANTY & AMC ═════════════════════════════════════════════════ -->
+  <section class="slide sand top">
+    <div class="eyebrow">13 · Warranty, support and AMC (RFQ §19)</div>
+    <h2 class="sm">90-day warranty included; optional AMC at ₹15,000 a month.</h2>
+    <div class="tbl-wrap">
+      <table class="tbl sm">
+        <tr><th>Severity</th><th>Example</th><th>Initial response</th><th>Workaround / resolution</th></tr>
+        <tr><td><strong style="color:var(--bad);">Critical</strong></td><td>Application unavailable; security incident; wrong status shown as “Complied”</td><td>Within 4 business hours</td><td>Workaround in 1 working day; fix in 3 working days</td></tr>
+        <tr><td><strong style="color:var(--warn);">Major</strong></td><td>Export, assignment or document upload unavailable</td><td>Within 1 working day</td><td>Fix in 5 working days</td></tr>
+        <tr><td><strong style="color:var(--terra);">Minor</strong></td><td>Non-critical or cosmetic defect</td><td>Within 2 working days</td><td>Next scheduled release, within 15 working days</td></tr>
+      </table>
+    </div>
+    <div class="cols-3" style="margin-top:1rem; gap:1rem;">
+      <div class="card compact"><h3 style="font-size:.95rem;">Warranty covers</h3><p>Defects in agreed functionality · security defects · restoring functionality after failure · documentation updates · re-running the evaluation suite after AI fixes.</p></div>
+      <div class="card compact"><h3 style="font-size:.95rem;">AMC adds</h3><p>Same targets · security, dependency and model-version updates · monthly health report (uptime, errors, cost per enquiry) · 8 hours/month of small enhancements · annual review capped at 8%.</p></div>
+      <div class="card compact"><h3 style="font-size:.95rem;">Hours &amp; escalation</h3><p>Mon–Sat 10:00–18:00 IST, excl. national holidays; security incidents any time, BES notified within 24 hours. L1 Backend Engineer → L2 Senior AI Engineer → L3 Director.</p></div>
+    </div>
+    <div class="footnote">
+      <span>Not covered: third-party outages (C9), changes made by others, new features or categories</span>
+      <span>RFQ §19</span>
+    </div>
+  </section>
+
+  <!-- ══ 27 DATA SECURITY ══════════════════════════════════════════════════ -->
+  <section class="slide top">
+    <div class="eyebrow">14 · Data security and confidentiality (RFQ §14)</div>
+    <h2 class="sm">BES data stays in a BES-owned AWS account, processed in India.</h2>
+    <div class="tbl-wrap">
+      <table class="tbl sm">
+        <tr><th>Provider</th><th>Role</th><th>Location</th><th>Data handled</th><th>Owner</th></tr>
+        <tr><td><strong>Amazon Web Services</strong></td><td>EC2, RDS, S3, CloudWatch, SES, Textract</td><td>Mumbai (ap-south-1)</td><td>Documents, enquiries, records, logs</td><td>BES</td></tr>
+        <tr><td><strong>Amazon Bedrock</strong> (Anthropic Claude)</td><td>AI inference, embeddings</td><td>India geographic inference: Mumbai &amp; Hyderabad only</td><td>Enquiry text and retrieved passages, per request; not stored by default</td><td>BES</td></tr>
+        <tr><td><strong>GitHub</strong></td><td>Source repository</td><td>Global</td><td>Code, configuration, prompts — no BES data</td><td>BES org</td></tr>
+        <tr><td><strong>KritinAI</strong></td><td>Developer &amp; support</td><td>Pune</td><td>Named, time-limited access accounts only</td><td>—</td></tr>
+      </table>
+    </div>
+    <div class="cols-2" style="margin-top:1rem; gap:1rem;">
+      <div class="card compact">
+        <h3 style="font-size:.95rem;">Controls</h3>
+        <ul class="feat sm">
+          <li>Named users, strong passwords, optional TOTP; five roles; document access tags filtered in the database</li>
+          <li>TLS 1.2+; AWS KMS encryption for database, S3 and disks</li>
+          <li>KritinAI access via IAM Identity Center, least privilege, MFA, revocable by BES</li>
+          <li>Append-only audit log; secrets in AWS Secrets Manager</li>
+          <li>No BES data in personal accounts, laptops or AI coding tools</li>
+        </ul>
+      </div>
+      <div class="card compact">
+        <h3 style="font-size:.95rem;">Retention &amp; regulation</h3>
+        <ul class="feat sm">
+          <li>Business records until deleted by BES; logs 180 days; backups 7-day PITR + 35-day weekly snapshots</li>
+          <li>No KritinAI copies outside BES systems; deletion confirmed in writing at handover or termination</li>
+          <li>Incident notice within 24 hours of discovery, then a root-cause report</li>
+          <li>Design reviewed against the DPDP Act 2023 and DPDP Rules 2025 before production data is introduced</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footnote">
+      <span>KritinAI Technologies Pvt. Ltd. · ISO/IEC 27001:2022 certified</span>
+      <span>RFQ §14</span>
+    </div>
+  </section>
+
+  <!-- ══ 28 IP & LICENCES ══════════════════════════════════════════════════ -->
+  <section class="slide sand top">
+    <div class="eyebrow">14 · Intellectual property and component disclosure (RFQ §15)</div>
+    <h2 class="sm">BES owns the code, prompts and workflows — with minimal lock-in.</h2>
+    <div class="cols cols-top" style="gap:1.6rem;">
+      <div>
+        <ul class="feat sm">
+          <li>On payment, BES owns all project-specific source code, workflows, prompts, configuration, documentation and deliverables</li>
+          <li>BES data and documents remain BES property at all times</li>
+          <li>Any pre-existing KritinAI component is listed at M1, with a perpetual, royalty-free, irrevocable licence and source code</li>
+          <li>Hosting, AI accounts, repository and admin accounts are BES-owned from Day 1</li>
+          <li>No copyleft (AGPL) libraries — BES is free to modify and redeploy</li>
+        </ul>
+        <div class="callout" style="margin-top:.8rem;"><p>Lock-in: one model interface — switch to another Bedrock model, Anthropic API, OpenAI or Gemini by configuration and an evaluation re-run. Docker containers move to any cloud or on-premises server.</p></div>
+      </div>
+      <div class="tbl-wrap">
+        <table class="tbl sm">
+          <tr><th>Component</th><th>Licence</th><th>Restriction</th></tr>
+          <tr><td>React, TypeScript, Vite</td><td>MIT / Apache-2.0</td><td>None</td></tr>
+          <tr><td>FastAPI, Pydantic</td><td>MIT</td><td>None</td></tr>
+          <tr><td>LangGraph, LangChain</td><td>MIT</td><td>None</td></tr>
+          <tr><td>PostgreSQL, pgvector</td><td>PostgreSQL</td><td>None</td></tr>
+          <tr><td>pdfplumber, pypdf, python-docx, openpyxl</td><td>MIT / BSD</td><td>None</td></tr>
+          <tr><td>n8n Community Edition</td><td>Sustainable Use License</td><td>Free for BES internal use on its own server; not for resale or hosting for others</td></tr>
+          <tr><td>Docker, Caddy</td><td>Apache-2.0</td><td>None</td></tr>
+          <tr><td>Amazon Bedrock, Textract, SES</td><td>AWS Customer Agreement</td><td>Pay per use</td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="footnote">
+      <span>KritinAI Technologies Pvt. Ltd. · Proposal KAI/BES/2026/001</span>
+      <span>RFQ §15</span>
+    </div>
+  </section>
+
+  <!-- ══ 29 FUTURE INTEGRATION ═════════════════════════════════════════════ -->
+  <section class="slide top">
+    <div class="eyebrow">15 · Future scalability and integration strategy (RFQ §7)</div>
+    <h2 class="sm">API-first: later phases plug into the same core.</h2>
+    <div class="badge-row" style="margin-top:0; margin-bottom:1rem;">
+      <span class="pill pill-sm">Documented REST API (OpenAPI)</span>
+      <span class="pill pill-sm">Webhooks on enquiry events</span>
+      <span class="pill pill-sm">“Public” document access level</span>
+      <span class="pill pill-sm">Categories as configuration</span>
+      <span class="pill pill-sm">n8n ready for connectors</span>
+    </div>
+    <div class="tbl-wrap">
+      <table class="tbl sm">
+        <tr><th>Integration</th><th>Approach</th><th>Notes / extra licences</th></tr>
+        <tr><td><strong>BASE website</strong> (Phase V)</td><td>Embeddable chat and enquiry widget on the same API with the public role; enquiries go straight into the register</td><td>Hosting and redesign separate; rate limiting and spam protection</td></tr>
+        <tr><td><strong>Zoho CRM</strong> or another CRM</td><td>Two-way sync via n8n’s Zoho connector or Zoho REST API</td><td>API limits depend on the Zoho edition; licences are BES’s</td></tr>
+        <tr><td><strong>E-mail intake</strong></td><td>Shared mailbox via Microsoft 365 / Gmail APIs or SES inbound; auto-registered for review</td><td>Mailbox owned by BES</td></tr>
+        <tr><td><strong>WhatsApp Business</strong></td><td>Meta WhatsApp Cloud API via n8n; replies only after approval</td><td>Meta per-conversation charges; verified number, approved templates</td></tr>
+        <tr><td><strong>Tender analyst</strong> (Phase II)</td><td>Reuses the extraction and compliance engine</td><td>Large-document handling sized then</td></tr>
+        <tr><td><strong>Purchase, service, ERP</strong> (III–IV)</td><td>REST or database connectors via n8n or the API</td><td>Depends on the ERP’s API</td></tr>
+        <tr><td><strong>Reporting</strong> (Phase VI)</td><td>Read-only reporting views or a BI tool on PostgreSQL</td><td>BI licence if chosen</td></tr>
+      </table>
+    </div>
+    <p style="font-size:.86rem; color:var(--muted); max-width:none; margin-top:.6rem;">Scaling path: the same containers move to AWS ECS with auto-scaling and a multi-AZ database — no code changes.</p>
+    <div class="footnote">
+      <span>KritinAI Technologies Pvt. Ltd. · Proposal KAI/BES/2026/001</span>
+      <span>RFQ §7, §23</span>
+    </div>
+  </section>
+
+  <!-- ══ 30 CLARIFICATIONS ═════════════════════════════════════════════════ -->
+  <section class="slide sand top">
+    <div class="eyebrow">16 · Clarifications requested from BES</div>
+    <h2 class="sm">Ten answers that lock scope and schedule.</h2>
+    <p class="lead sm">None of these changes the price unless BES widens the scope.</p>
+    <div class="cols-2" style="gap:.6rem 1.4rem;">
+      <div class="steps compact">
+        <div class="step"><div class="num">1</div><div><p>Do we agree the C1 pilot capacity (15 users, 10 concurrent, 1,000 enquiries/month, 30 documents or 2,000 pages)?</p></div></div>
+        <div class="step"><div class="num">2</div><div><p>Are any Phase I documents scanned, and roughly how many pages in total?</p></div></div>
+        <div class="step"><div class="num">3</div><div><p>Which documents or customer data are confidential, and which roles may see them?</p></div></div>
+        <div class="step"><div class="num">4</div><div><p>Who approves which response types? Does Case 2 always need Director approval?</p></div></div>
+        <div class="step"><div class="num">5</div><div><p>Does BES have an AWS account and GitHub organisation, or should we help create them in BES’s name?</p></div></div>
+      </div>
+      <div class="steps compact">
+        <div class="step"><div class="num">6</div><div><p>Is AWS Mumbai with India-only AI processing acceptable, or is a specific provider required?</p></div></div>
+        <div class="step"><div class="num">7</div><div><p>Which BES e-mail domain should internal reminders use?</p></div></div>
+        <div class="step"><div class="num">8</div><div><p>Who is the BES technical coordinator, and who forms the acceptance team?</p></div></div>
+        <div class="step"><div class="num">9</div><div><p>Can BES share 5–10 anonymised past enquiries with engineer responses at kick-off for the §13 baseline?</p></div></div>
+        <div class="step"><div class="num">10</div><div><p>Are the 20/40/40 terms and the 5-working-day UAT window (D1) acceptable?</p></div></div>
+      </div>
+    </div>
+    <div class="footnote">
+      <span>KritinAI Technologies Pvt. Ltd. · Proposal KAI/BES/2026/001</span>
+      <span>Please reply to connectus@kritinai.com</span>
+    </div>
+  </section>
+
+  <!-- ══ 31 ACCEPTANCE & CONTACT ═══════════════════════════════════════════ -->
+  <section class="slide hero">
+    <div style="margin:auto 0; position:relative; z-index:1;">
+      <div class="eyebrow">Acceptance &amp; next steps</div>
+      <h1>Ready to start on<br/><span style="color:var(--warn);">BES’s first AI initiative.</span></h1>
+      <p class="tag">On receipt of the work order and NDA, we start Day 1 with the kick-off and execution schedule — and demonstrate working software on Day 3.</p>
+      <div class="cols-2" style="max-width:820px; margin-top:1.4rem; gap:1rem;">
+        <div class="card compact"><h3 style="font-size:.95rem;">For KritinAI Technologies Pvt. Ltd.</h3><p style="font-size:.86rem;">Awanish Kumar Prajapati, Director<br/>Signature: ____________________ Date: ________</p></div>
+        <div class="card compact"><h3 style="font-size:.95rem;">For BASE Electronics &amp; Systems</h3><p style="font-size:.86rem;">Name / Designation: ____________________<br/>Signature: ____________________ Date: ________</p></div>
+      </div>
+      <div class="badge-row">
+        <a class="contact-link" href="https://www.kritinai.com/" target="_blank" rel="noopener">kritinai.com</a>
+        <a class="contact-link" href="https://www.linkedin.com/company/kritinai-technologies-private-limited/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="contact-link" href="mailto:connectus@kritinai.com">connectus@kritinai.com</a>
+        <a class="contact-link" href="tel:+918446878088">+91 8446878088</a>
+      </div>
+    </div>
+    <div class="closing-bar">
+      <span style="color:var(--terra-100); font-size:.88rem; font-weight:600;">KritinAI Technologies Pvt. Ltd. · Pune, India</span>
+      <span style="color:var(--muted); font-size:.78rem;">CIN: U62020PN2025PTC245276 · GSTIN: 27AAMCK1105B1Z2 · ISO/IEC 27001:2022 &amp; ISO 9001:2015</span>
+    </div>
+  </section>
+
+</div><!-- /.deck -->
+
+<div class="counter" id="counter">1 / 31</div>
+<div class="nav">
+  <button data-nav="prev" aria-label="Previous slide">&#8249;</button>
+  <button data-nav="next" aria-label="Next slide">&#8250;</button>
+</div>
+
+<script src="../../assets/js/kritinai-deck.js"></script>
+</body>
+</html>
